@@ -47,10 +47,10 @@ app.use('/menu',menuRoutes) ;
 app.use('/form',formRouter) ;
 
 
+const PORT= process.env.PORT ||3333
 
-
-db(app.listen(3333, () => {
-  console.log("jaimin server is run on port 3333");
+db(app.listen(PORT, () => {
+  console.log(`jaimin server is run on port ${PORT}`);
   console.log(base_url);
   
 }))
