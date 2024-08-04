@@ -52,8 +52,7 @@ const corsOptions = {
 //   next();
 // })
 // app.use(cors())
-
-app.use(cors(corsOptions));
+ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use("/person",personRoutes);
 app.use('/menu',menuRoutes) ;
